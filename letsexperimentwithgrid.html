@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweta's First Grid</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+      gap: 15px;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    .grid-item {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 25px;
+      text-align: center;
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      border-radius: 8px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .grid-item:hover {
+      transform: scale(1.1);
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+    }
+    .name {
+      grid-column: span 3;
+      font-size: 28px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+    }
+  </style>
+</head>
+<body>
+  <h1>My First Grid Layout</h1>
+  <div class="grid-container">
+    <div class="grid-item">HTML</div>
+    <div class="grid-item">CSS</div>
+    <div class="grid-item">Grid</div>
+    <div class="grid-item">Selectors</div>
+    <div class="grid-item">Animation</div>
+    <div class="grid-item">Typography</div>
+    <div class="grid-item name">Sweta Singh</div>
+  </div>
+</body>
+</html>
