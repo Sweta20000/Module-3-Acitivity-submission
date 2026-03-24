@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweta's Desktop Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 equal columns for desktop */
+      gap: 20px;
+      padding: 40px;
+    }
+    .grid-item {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 30px;
+      text-align: center;
+      font-size: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .grid-item:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+    }
+
+    .name {
+      grid-column: span 4; /* stretches across all 4 columns */
+      font-size: 32px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; padding:20px;">My Desktop Grid Layout</h1>
+  <div class="grid-container">
+    <div class="grid-item">HTML</div>
+    <div class="grid-item">CSS</div>
+    <div class="grid-item">Selectors</div>
+    <div class="grid-item">Typography</div>
+    <div class="grid-item">Animation</div>
+    <div class="grid-item">Positioning</div>
+    <div class="grid-item">Gradients</div>
+    <div class="grid-item">Box Model</div>
+    <div class="grid-item name">Sweta Singh</div>
+  </div>
+</body>
+</html>

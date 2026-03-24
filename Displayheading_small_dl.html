@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweta's Desktop Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+      font-size: 36px;
+      color: #333;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+      gap: 20px;
+      padding: 40px;
+    }
+    .grid-item {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 25px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .grid-item:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+    }
+    .grid-item h2 {
+      margin: 0;
+      font-size: 22px;
+      text-align: center;
+    }
+    .grid-item small {
+      display: block;
+      font-size: 14px;
+      text-align: center;
+      opacity: 0.85;
+      margin-top: 5px;
+    }
+    .name {
+      grid-column: span 4;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+    }
+  </style>
+</head>
+<body>
+  <h1>Sweta Singh – My Desktop Grid</h1>
+  <div class="grid-container">
+    <div class="grid-item">
+      <h2>HTML</h2>
+      <small>Structure & Elements</small>
+    </div>
+    <div class="grid-item">
+      <h2>CSS</h2>
+      <small>Styling & Layouts</small>
+    </div>
+    <div class="grid-item">
+      <h2>Selectors</h2>
+      <small>Targeting Elements</small>
+    </div>
+    <div class="grid-item">
+      <h2>Typography</h2>
+      <small>Fonts & Readability</small>
+    </div>
+    <div class="grid-item">
+      <h2>Animation</h2>
+      <small>Interactive Effects</small>
+    </div>
+    <div class="grid-item">
+      <h2>Positioning</h2>
+      <small>Layout Control</small>
+    </div>
+    <div class="grid-item">
+      <h2>Gradients</h2>
+      <small>Color Transitions</small>
+    </div>
+    <div class="grid-item">
+      <h2>Box Model</h2>
+      <small>Spacing & Borders</small>
+    </div>
+    <div class="grid-item name">Sweta Singh</div>
+  </div>
+</body>
+</html>
